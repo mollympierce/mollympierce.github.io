@@ -1,0 +1,147 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+
+const title = "Molly Pierce Design";
+const description = "";
+const bodyClass = "";
+const pageStyles = "\n  body {\n  -moz-font-feature-settings: \"liga\" on;\n  -moz-osx-font-smoothing: grayscale;\n  -webkit-font-smoothing: antialiased;\n  font-feature-settings: \"liga\" on;\n  text-rendering: optimizeLegibility;\n}\n";
+---
+<BaseLayout
+  title={title}
+  description={description}
+  bodyClass={bodyClass}
+  pageStyles={pageStyles}
+>
+  <div>
+    <div class="w-row">
+      <div class="column-25 portfolio-page w-col w-col-9">
+        <div class="portfolio-top">
+          <div class="portfolio-top-left">
+            <div class="portfolio-text">
+              <div>
+                <div class="portfolio-text--line">
+                  <h4 class="portfolio-title">Tower on The Hill</h4>
+                  <a
+                    href="/portfolio-categories/back-to-school-22-23-class-projects-university-of-texas-at-austin-school-of-creative-technology-design"
+                    class="tag-2 w-button"
+                  >
+                    Personal/School Projects
+                  </a>
+                </div>
+              </div>
+              <div>
+                <div class="tag-wrapper w-dyn-list">
+                  <div role="list" class="tag-list w-dyn-items">
+                    <div role="listitem" class="w-dyn-item">
+                      <a href="/portfolio-item/tower" class="tag w-button">
+                        Environmental
+                      </a>
+                    </div>
+                    <div role="listitem" class="w-dyn-item">
+                      <a href="/portfolio-item/tower" class="tag w-button">
+                        Illustration
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <p class="portfolio-caption">
+                  Concept developed for a memorial design project.
+                </p>
+                <h6 class="heading-123 w-condition-invisible">What I did:</h6>
+              </div>
+            </div>
+            <a
+              href="/portfolio-categories/back-to-school-22-23-class-projects-university-of-texas-at-austin-school-of-creative-technology-design"
+              class="back-link w-inline-block"
+            >
+              <h6 class="back-btn">↖ BACK</h6>
+            </a>
+            <a
+              href="/portfolio-categories/back-to-school-22-23-class-projects-university-of-texas-at-austin-school-of-creative-technology-design"
+              class="w-inline-block w-condition-invisible"
+            >
+              <h6 class="heading-121 w-dyn-bind-empty"></h6>
+              <h6 class="heading-122">↗</h6>
+            </a>
+          </div>
+          <div
+            style="
+              background-image: url(/assets/images/mpd-portfolio-memorial-competition-hero.png);
+            "
+            class="portfolio-top-right"
+          ></div>
+        </div>
+        <div class="portfolio-slide">
+          <img
+            src="/assets/images/capitol5.png"
+            loading="lazy"
+            alt=""
+            sizes="(max-width: 767px) 100vw, 75vw"
+            srcset="
+              /assets/images/capitol5-p-500.png   500w,
+              /assets/images/capitol5-p-800.png   800w,
+              /assets/images/capitol5-p-1080.png 1080w,
+              /assets/images/capitol5-p-1600.png 1600w,
+              /assets/images/capitol5-p-2000.png 2000w,
+              /assets/images/capitol5.png        2322w
+            "
+          />
+        </div>
+        <div class="portfolio-slide">
+          <img
+            src="/assets/images/capitol6.png"
+            loading="lazy"
+            alt=""
+            sizes="(max-width: 767px) 100vw, 75vw"
+            srcset="
+              /assets/images/capitol6-p-500.png   500w,
+              /assets/images/capitol6-p-800.png   800w,
+              /assets/images/capitol6-p-1080.png 1080w,
+              /assets/images/capitol6-p-1600.png 1600w,
+              /assets/images/capitol6-p-2000.png 2000w,
+              /assets/images/capitol6.png        2322w
+            "
+          />
+        </div>
+        <div class="portfolio-slide">
+          <img
+            src="/assets/images/capitol4.png"
+            loading="lazy"
+            alt=""
+            sizes="(max-width: 767px) 100vw, 75vw"
+            srcset="
+              /assets/images/capitol4-p-500.png   500w,
+              /assets/images/capitol4-p-800.png   800w,
+              /assets/images/capitol4-p-1080.png 1080w,
+              /assets/images/capitol4-p-1600.png 1600w,
+              /assets/images/capitol4-p-2000.png 2000w,
+              /assets/images/capitol4.png        2322w
+            "
+          />
+        </div>
+        <div class="portfolio-slide">
+          <img
+            src="/assets/images/capitol7.png"
+            loading="lazy"
+            alt=""
+            sizes="(max-width: 767px) 100vw, 75vw"
+            srcset="
+              /assets/images/capitol7-p-500.png   500w,
+              /assets/images/capitol7-p-800.png   800w,
+              /assets/images/capitol7-p-1080.png 1080w,
+              /assets/images/capitol7-p-1600.png 1600w,
+              /assets/images/capitol7-p-2000.png 2000w,
+              /assets/images/capitol7.png        2322w
+            "
+          />
+        </div>
+        <div class="portfolio-slide"></div>
+        <div class="portfolio-slide"></div>
+        <div class="portfolio-slide"></div>
+        <div class="portfolio-slide"></div>
+        <div class="portfolio-slide"></div>
+      </div>
+    </div>
+  </div>
+
+</BaseLayout>

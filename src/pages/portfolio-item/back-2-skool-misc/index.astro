@@ -1,0 +1,107 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+
+const title = "Molly Pierce Design";
+const description = "";
+const bodyClass = "";
+const pageStyles = "\n  body {\n  -moz-font-feature-settings: \"liga\" on;\n  -moz-osx-font-smoothing: grayscale;\n  -webkit-font-smoothing: antialiased;\n  font-feature-settings: \"liga\" on;\n  text-rendering: optimizeLegibility;\n}\n";
+---
+<BaseLayout
+  title={title}
+  description={description}
+  bodyClass={bodyClass}
+  pageStyles={pageStyles}
+>
+  <div>
+    <div class="w-row">
+      <div class="column-25 portfolio-page w-col w-col-9">
+        <div class="portfolio-top">
+          <div class="portfolio-top-left">
+            <div class="portfolio-text">
+              <div>
+                <div class="portfolio-text--line">
+                  <h4 class="portfolio-title">Back 2 Skool Miscellany</h4>
+                  <a
+                    href="/portfolio-categories/back-to-school-22-23-class-projects-university-of-texas-at-austin-school-of-creative-technology-design"
+                    class="tag-2 w-button"
+                  >
+                    Personal/School Projects
+                  </a>
+                </div>
+              </div>
+              <div>
+                <div class="tag-wrapper w-dyn-list">
+                  <div role="list" class="tag-list w-dyn-items">
+                    <div role="listitem" class="w-dyn-item">
+                      <a
+                        href="/portfolio-item/back-2-skool-misc"
+                        class="tag w-button"
+                      >
+                        Illustration
+                      </a>
+                    </div>
+                    <div role="listitem" class="w-dyn-item">
+                      <a
+                        href="/portfolio-item/back-2-skool-misc"
+                        class="tag w-button"
+                      >
+                        Typography
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <p class="portfolio-caption">
+                  Odds &amp; ends from design coursework at UT Austin.
+                </p>
+                <h6 class="heading-123 w-condition-invisible">What I did:</h6>
+              </div>
+            </div>
+            <a
+              href="/portfolio-categories/back-to-school-22-23-class-projects-university-of-texas-at-austin-school-of-creative-technology-design"
+              class="back-link w-inline-block"
+            >
+              <h6 class="back-btn">↖ BACK</h6>
+            </a>
+            <a
+              href="/portfolio-categories/back-to-school-22-23-class-projects-university-of-texas-at-austin-school-of-creative-technology-design"
+              class="w-inline-block w-condition-invisible"
+            >
+              <h6 class="heading-121 w-dyn-bind-empty"></h6>
+              <h6 class="heading-122">↗</h6>
+            </a>
+          </div>
+          <div
+            style="
+              background-image: url(/assets/images/screen-shot-2022-12-18-at-8.24.13-pm.png);
+            "
+            class="portfolio-top-right"
+          ></div>
+        </div>
+        <div class="portfolio-slide">
+          <img
+            src="/assets/images/screen-shot-2022-12-18-at-7.10.34-pm.png"
+            loading="lazy"
+            alt=""
+            sizes="(max-width: 767px) 100vw, 75vw"
+            srcset="
+              /assets/images/screen-shot-2022-12-18-at-7.10.34-pm-p-500.png   500w,
+              /assets/images/screen-shot-2022-12-18-at-7.10.34-pm-p-800.png   800w,
+              /assets/images/screen-shot-2022-12-18-at-7.10.34-pm-p-1080.png 1080w,
+              /assets/images/screen-shot-2022-12-18-at-7.10.34-pm-p-1600.png 1600w,
+              /assets/images/screen-shot-2022-12-18-at-7.10.34-pm.png        1764w
+            "
+          />
+        </div>
+        <div class="portfolio-slide"></div>
+        <div class="portfolio-slide"></div>
+        <div class="portfolio-slide"></div>
+        <div class="portfolio-slide"></div>
+        <div class="portfolio-slide"></div>
+        <div class="portfolio-slide"></div>
+        <div class="portfolio-slide"></div>
+        <div class="portfolio-slide"></div>
+      </div>
+    </div>
+  </div>
+
+</BaseLayout>

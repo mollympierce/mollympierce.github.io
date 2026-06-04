@@ -1,0 +1,92 @@
+---
+const pathname = Astro.url.pathname.replace(/\/$/, '') || '/';
+
+const isHome = pathname === '/';
+const isInfo = pathname === '/about' || pathname === '/info';
+const isProjectArchive = (
+  pathname === '/project-archive'
+  || pathname === '/category/portfolio'
+  || pathname.startsWith('/portfolio-categories/')
+  || pathname.startsWith('/portfolio-item/')
+  || pathname.startsWith('/tags/')
+);
+
+const homeClass = `link-block-17 w-inline-block${isHome ? ' w--current' : ''}`;
+const infoClass = `link-18 big-nav-link across${isInfo ? ' w--current' : ''}`;
+const archiveClass = `link-18 big-nav-link across${isProjectArchive ? ' w--current' : ''}`;
+---
+<header class="site-header">
+  <div class="column-37 w-col w-col-3">
+    <div
+      data-collapse="all"
+      data-animation="default"
+      data-duration="400"
+      data-easing="ease"
+      data-easing2="ease"
+      role="banner"
+      class="navigation w-nav"
+    >
+      <a href="/" aria-current={isHome ? 'page' : undefined} class={homeClass}>
+        <div class="div-block-27">
+          <img
+            src="/assets/images/mpd-22-xtra-color.png"
+            loading="lazy"
+            alt=""
+            sizes="(max-width: 479px) 96vw, (max-width: 767px) 180px, (max-width: 991px) 26vw, 25vw"
+            srcset="/assets/images/mpd-22-xtra-color-p-500.png 500w, /assets/images/mpd-22-xtra-color-p-800.png 800w, /assets/images/mpd-22-xtra-color.png 960w"
+            class="image-17"
+          />
+          <img
+            src="/assets/images/mpd-logo-colorful-across-3.png"
+            loading="lazy"
+            alt=""
+            sizes="(max-width: 479px) 100vw, (max-width: 767px) 94vw, 100vw"
+            srcset="/assets/images/mpd-logo-colorful-across-3-p-500.png 500w, /assets/images/mpd-logo-colorful-across-3-p-800.png 800w, /assets/images/mpd-logo-colorful-across-3-p-1080.png 1080w, /assets/images/mpd-logo-colorful-across-3-p-1600.png 1600w, /assets/images/mpd-logo-colorful-across-3-p-2000.png 2000w, /assets/images/mpd-logo-colorful-across-3-p-2600.png 2600w, /assets/images/mpd-logo-colorful-across-3-p-3200.png 3200w, /assets/images/mpd-logo-colorful-across-3.png 3942w"
+            class="image-23"
+          />
+        </div>
+      </a>
+      <div class="big-nav-row across">
+        <a href="/about" aria-current={isInfo ? 'page' : undefined} class={infoClass}>
+          🎪 Info
+        </a>
+        <a
+          href="/project-archive"
+          aria-current={isProjectArchive ? 'page' : undefined}
+          class={archiveClass}
+        >
+          🎷 Project Archive
+        </a>
+        <a href="https://mollypiercedesign.com/links/magazines" class="link-18 big-nav-link across">
+          🦄 Links
+        </a>
+        <a
+          href="/assets/files/molly-resume-only-designer-2023.pdf"
+          target="_blank"
+          class="link-18 big-nav-link across big-nav-link-white"
+        >
+          🕷 CV
+        </a>
+        <a
+          href="mailto:mollympierce@gmail.com?subject=Message%20for%20Molly"
+          class="link-18 big-nav-link across big-nav-link-white"
+        >
+          💌 Email
+        </a>
+        <a
+          href="https://www.linkedin.com/in/mollympierce/"
+          target="_blank"
+          class="link-18 big-nav-link across big-nav-link-white"
+        >
+          💼 LinkedIn
+        </a>
+        <a
+          href="https://www.are.na/molly-pierce"
+          target="_blank"
+          class="wide-nav-line w-inline-block"
+          aria-label="Are.na"
+        ></a>
+      </div>
+    </div>
+  </div>
+</header>

@@ -1,16 +1,35 @@
 ---
+import SharedFooter from '@components/SharedFooter.astro';
+import SharedNavigation from '@components/SharedNavigation.astro';
 import '../styles/global.css';
-const { title = 'Molly Pierce Design', description = 'Archived rebuild of mollypiercedesign.com as an Astro static site.' } = Astro.props;
+
+const {
+  title = 'Molly Pierce Design',
+  description = '',
+  bodyClass = '',
+  pageStyles = '',
+} = Astro.props;
 ---
 <!doctype html>
-<html lang="en">
+<html lang="en" data-wf-domain="mollypiercedesign.webflow.io" data-wf-site="61a6e1a9273f56833ef80246" class="w-mod-js">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content={description} />
+    {description && <meta name="description" content={description} />}
     <title>{title}</title>
+    <link rel="icon" href="/assets/images/mpd-22-fav.png" />
+    <link rel="apple-touch-icon" href="/assets/images/mpd-22-fav-256.png" />
+    <link rel="stylesheet" href="/assets/css/mollypiercedesign.webflow.css" />
+    {pageStyles && <style set:html={pageStyles} />}
   </head>
-  <body>
-    <slot />
+  <body class={bodyClass}>
+    <SharedNavigation />
+    <main>
+      <slot />
+    </main>
+    <SharedFooter />
+    <script is:inline src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script is:inline src="/assets/js/webflow-schunk.js"></script>
+    <script is:inline src="/assets/js/webflow.js"></script>
   </body>
 </html>

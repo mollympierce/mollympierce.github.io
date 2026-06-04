@@ -1,0 +1,139 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+
+const title = "Molly Pierce Design";
+const description = "";
+const bodyClass = "";
+const pageStyles = "\n  body {\n  -moz-font-feature-settings: \"liga\" on;\n  -moz-osx-font-smoothing: grayscale;\n  -webkit-font-smoothing: antialiased;\n  font-feature-settings: \"liga\" on;\n  text-rendering: optimizeLegibility;\n}\n";
+---
+<BaseLayout
+  title={title}
+  description={description}
+  bodyClass={bodyClass}
+  pageStyles={pageStyles}
+>
+  <div>
+    <div class="w-row">
+      <div class="column-25 portfolio-page w-col w-col-9">
+        <div class="portfolio-top">
+          <div class="portfolio-top-left">
+            <div class="portfolio-text">
+              <div>
+                <div class="portfolio-text--line">
+                  <h4 class="portfolio-title">Misc. Posters</h4>
+                  <a
+                    href="/portfolio-categories/molly-pierce-design-freelance-projects-2014-2022"
+                    class="tag-2 w-button"
+                  >
+                    Client Work
+                  </a>
+                </div>
+              </div>
+              <div>
+                <div class="tag-wrapper w-dyn-list">
+                  <div role="list" class="tag-list w-dyn-items">
+                    <div role="listitem" class="w-dyn-item">
+                      <a href="/portfolio-item/misc-posters" class="tag w-button">
+                        Poster
+                      </a>
+                    </div>
+                    <div role="listitem" class="w-dyn-item">
+                      <a href="/portfolio-item/misc-posters" class="tag w-button">
+                        Print
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <p class="portfolio-caption">
+                  Assorted poster designs from various projects.
+                </p>
+                <h6 class="heading-123 w-condition-invisible">What I did:</h6>
+              </div>
+            </div>
+            <a
+              href="/portfolio-categories/molly-pierce-design-freelance-projects-2014-2022"
+              class="back-link w-inline-block"
+            >
+              <h6 class="back-btn">↖ BACK</h6>
+            </a>
+            <a
+              href="/portfolio-categories/molly-pierce-design-freelance-projects-2014-2022"
+              class="w-inline-block w-condition-invisible"
+            >
+              <h6 class="heading-121 w-dyn-bind-empty"></h6>
+              <h6 class="heading-122">↗</h6>
+            </a>
+          </div>
+          <div
+            style="
+              background-image: url(/assets/images/mpd-ccso-music-in-motion-02.jpeg);
+            "
+            class="portfolio-top-right"
+          ></div>
+        </div>
+        <div class="portfolio-slide">
+          <img
+            src="/assets/images/mpd-ccso-music-in-motion-01.jpeg"
+            loading="lazy"
+            alt=""
+            sizes="(max-width: 767px) 100vw, 75vw"
+            srcset="
+              /assets/images/mpd-ccso-music-in-motion-01-p-500.jpeg   500w,
+              /assets/images/mpd-ccso-music-in-motion-01-p-800.jpeg   800w,
+              /assets/images/mpd-ccso-music-in-motion-01-p-1080.jpeg 1080w,
+              /assets/images/mpd-ccso-music-in-motion-01-p-1600.jpeg 1600w,
+              /assets/images/mpd-ccso-music-in-motion-01.jpeg        1800w
+            "
+          />
+        </div>
+        <div class="portfolio-slide">
+          <img
+            src="/assets/images/mpd-poster-traveling-2.png"
+            loading="lazy"
+            alt=""
+            sizes="(max-width: 767px) 100vw, 75vw"
+            srcset="
+              /assets/images/mpd-poster-traveling-2-p-500.png   500w,
+              /assets/images/mpd-poster-traveling-2-p-800.png   800w,
+              /assets/images/mpd-poster-traveling-2-p-1080.png 1080w,
+              /assets/images/mpd-poster-traveling-2.png        1480w
+            "
+          />
+        </div>
+        <div class="portfolio-slide">
+          <img
+            src="/assets/images/mpd-poster-ccso-movies.png"
+            loading="lazy"
+            alt=""
+            sizes="(max-width: 767px) 100vw, 75vw"
+            srcset="
+              /assets/images/mpd-poster-ccso-movies-p-500.png   500w,
+              /assets/images/mpd-poster-ccso-movies-p-800.png   800w,
+              /assets/images/mpd-poster-ccso-movies-p-1080.png 1080w,
+              /assets/images/mpd-poster-ccso-movies.png        1298w
+            "
+          />
+        </div>
+        <div class="portfolio-slide">
+          <img
+            src="/assets/images/mpd-poster-ccso-star-spangled.png"
+            loading="lazy"
+            alt=""
+            sizes="(max-width: 767px) 100vw, 75vw"
+            srcset="
+              /assets/images/mpd-poster-ccso-star-spangled-p-500.png  500w,
+              /assets/images/mpd-poster-ccso-star-spangled-p-800.png  800w,
+              /assets/images/mpd-poster-ccso-star-spangled.png       1056w
+            "
+          />
+        </div>
+        <div class="portfolio-slide"></div>
+        <div class="portfolio-slide"></div>
+        <div class="portfolio-slide"></div>
+        <div class="portfolio-slide"></div>
+        <div class="portfolio-slide"></div>
+      </div>
+    </div>
+  </div>
+
+</BaseLayout>

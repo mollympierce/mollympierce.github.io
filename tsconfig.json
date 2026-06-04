@@ -7,5 +7,7 @@
       "@layouts/*": ["src/layouts/*"],
       "@styles/*": ["src/styles/*"]
     }
-  }
+  },
+  "include": ["src/**/*.astro", "src/**/*.ts"],
+  "exclude": ["archive", "dist", "public", "site-archive"]
 }
