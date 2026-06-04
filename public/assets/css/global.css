@@ -1,3 +1,13 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+}
+
 html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -5,7 +15,30 @@ html {
 }
 
 body {
-  margin: 0;
+  -moz-font-feature-settings: "liga" on;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-feature-settings: "liga" on;
+  text-rendering: optimizeLegibility;
+}
+
+img {
+  max-width: 100%;
+}
+
+.site-header,
+.site-footer {
+  display: contents;
+}
+
+@media (min-width: 992px) {
+  html.w-mod-js:not(.w-mod-ix) body.home-page [data-w-id="340d957e-719d-ff00-53be-9ba80e305e0a"] {
+    display: flex;
+  }
+
+  html.w-mod-js:not(.w-mod-ix) body.home-page [data-w-id="bf62d659-ffef-40df-a691-6aea175e8397"] {
+    opacity: 1;
+  }
 }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {

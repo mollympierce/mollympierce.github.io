@@ -1,7 +1,6 @@
 ---
 import SharedFooter from '@components/SharedFooter.astro';
 import SharedNavigation from '@components/SharedNavigation.astro';
-import '../styles/global.css';
 
 const {
   title = 'Molly Pierce Design',
@@ -19,7 +18,7 @@ const {
     <title>{title}</title>
     <link rel="icon" href="/assets/images/mpd-22-fav.png" />
     <link rel="apple-touch-icon" href="/assets/images/mpd-22-fav-256.png" />
-    <link rel="stylesheet" href="/assets/css/mollypiercedesign.webflow.css" />
+    <link rel="stylesheet" href="/assets/css/global.css" />
     {pageStyles && <style set:html={pageStyles} />}
   </head>
   <body class={bodyClass}>
